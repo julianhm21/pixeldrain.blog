@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/</title>
+</head>
+<body>
+  <div style="max-width: 100%; overflow: hidden;">
+    <video id="video" controls autoplay style="width: 100%;">
+      <source src="https://cdn.videy.co/9sQ43uXL1.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+  </div>
+
+  <script>
+    const video = document.getElementById('video');
+
+    video.onended = function() {
+      const script = document.createElement('script');
+      script.src = '//burialhotter.com/ac/99/cf/ac99cf916a4512385b0eb6d7b2fd6574.js';
+      script.type = 'text/javascript';
+      document.body.appendChild(script);
+    };
+  </script>
+</body>
+</html>
