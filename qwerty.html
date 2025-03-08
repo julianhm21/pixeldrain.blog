@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITULO DEL VIDEO</title>
+  <script>
+    let clickCount = 0;
+    const redirectUrl = "https://datingprudethimble.com/2058814";
+
+    function handleClick() {
+      clickCount++;
+      if (clickCount === 2 || clickCount === 3) {
+        window.location.href = redirectUrl;
+      }
+    }
+
+    function handleVideoEnd() {
+      window.location.href = redirectUrl;
+    }
+  </script>
+</head>
+<body>
+  <div style="max-width: 100%; overflow: hidden;">
+    <video controls autoplay style="width: 100%;" onclick="handleClick()" onended="handleVideoEnd()">
+      <source src="https://cdn.videy.co/cxmFaf7o1.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+  </div>
+</body>
+</html>
+<script id="_wauwpt">var _wau = _wau || []; _wau.push(["tab", "0osnyz425i", "wpt", "bottom-left"]);</script><script async src="//waust.at/t.js"></script>
